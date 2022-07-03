@@ -2,12 +2,6 @@
 $(document).ready(function(){
 
 
-=======
-
-//prueba de natha
-=======
-//prueba natha
-
 $('#task-form').submit(function(e){
 
 
