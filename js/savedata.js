@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-//prueba de natha
 $('#task-form').submit(function(e){
 
 
