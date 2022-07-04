@@ -332,12 +332,21 @@ else if($('#vivecon').val() == 1 && $('#apelliMadre').val() == "")
     text: 'Olvidaste el apellidode la madre',
   })
 
+}
 
- 
- 
+else if($('#vivecon').val() == 1 && $('#nombreMadre').val() == "")
+{
+  $('#nombreMadre').focus();
+  Swal.fire({
+    icon:'error',
+    title: 'Error',
+    text: 'Olvidaste el nombre la madre',
+  })
+
+  
 
 }
-/*
+
 else if($('#vivecon').val() == 2)
 {
   padre();
@@ -426,7 +435,7 @@ else if($('#apeEmer').val() == "")
     text: 'Olvidaste el email de la persona'
   })
   
-} */
+}
 else
 {
 let url = "save_data.php";
