@@ -641,9 +641,9 @@ else if($('#nombreMadre').val() == "")
 
   
 
+
 }
-  
-  else if($('#direccionMadre').val() == "")
+else if($('#vivecon').val() == 1 && $('#direccionMadre').val() == "")
   {
     $('#direccionMadre').focus();
     Swal.fire({
@@ -653,7 +653,8 @@ else if($('#nombreMadre').val() == "")
     })
     
 
-  }else if($('#cedMadre').val() == "")
+  }
+  else if($('#vivecon').val() == 1 && $('#cedMadre').val() == "")
   {
     $('#cedMadre').focus();
     Swal.fire({
@@ -664,7 +665,8 @@ else if($('#nombreMadre').val() == "")
 
     
 
-  }else if($('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val()))
+  }
+  else if($('#vivecon').val() == 1 && $('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val()))
   {
     $('#cedMadre').focus();
     Swal.fire({
@@ -676,8 +678,7 @@ else if($('#nombreMadre').val() == "")
 
   }
   
-  
-  else if($('#estudioMadre').val() == "")
+  else if($('#vivecon').val() == 1 && $('#estudioMadre').val() == "")
   {
 
     $('#estudioMadre').focus();
@@ -687,7 +688,7 @@ else if($('#nombreMadre').val() == "")
       text: 'Olvidaste completar los estudios de la madre',
     })
     
-  }else if($('#trabajoMadre').val() == "")
+  }else if($('#vivecon').val() == 1 && $('#trabajoMadre').val() == "")
   {
 
     $('#trabajoMadre').focus();
@@ -699,7 +700,7 @@ else if($('#nombreMadre').val() == "")
     })
     
 
-  }else if($('#ocupacMadre').val() == "")
+  }else if($('#vivecon').val() == 1 && $('#ocupacMadre').val() == "")
   {
 
     $('#ocupacMadre').focus();
@@ -709,7 +710,7 @@ else if($('#nombreMadre').val() == "")
       text: 'Olvidaste completar la ocupacion de la madre',
     })
     
-  }else if($('#emailMadre').val() == "")
+  }else if($('#vivecon').val() == 1 && $('#emailMadre').val() == "")
   {
     $('#emailMadre').focus();
     Swal.fire({
@@ -721,7 +722,7 @@ else if($('#nombreMadre').val() == "")
 
 
   }
-  else if($('#telefMadre').val() == "")
+  else if($('#vivecon').val() == 1 && $('#telefMadre').val() == "")
   {
 
 
@@ -732,7 +733,7 @@ else if($('#nombreMadre').val() == "")
       text: 'Olvidaste completar numero de telefono de la madre',
     })
     
-  }else if($('#telefMadre').val().length < 10 ||  $('#telefMadre').val().length > 10 || isNaN($('#telefMadre').val()))
+  }else if($('#vivecon').val() == 1 && $('#telefMadre').val().length < 10 ||  $('#telefMadre').val().length > 10 || isNaN($('#telefMadre').val()))
   {
 
 
@@ -748,7 +749,7 @@ else if($('#nombreMadre').val() == "")
     
   }
   
-  else if($('#teloficMadre').val() == "")
+  else if($('#vivecon').val() == 1 && $('#teloficMadre').val() == "")
   {
 
 
@@ -759,7 +760,7 @@ else if($('#nombreMadre').val() == "")
       text: 'Olvidaste completar numero de telefono de la  oficina de la madre',
     })
     
-  }else if($('#teloficMadre').val().length < 10 || $('#teloficMadre').val().length > 10 || isNaN($('#teloficMadre').val()))
+  }else if($('#vivecon').val() == 1 && $('#teloficMadre').val().length < 10 || $('#teloficMadre').val().length > 10 || isNaN($('#teloficMadre').val()))
   {
 
 
@@ -775,7 +776,7 @@ else if($('#nombreMadre').val() == "")
 
   }
 
-  else if($('#telefMovil').val() == "")
+  else if($('#vivecon').val() == 1 && $('#telefMovil').val() == "")
   {
 
 
@@ -786,7 +787,7 @@ else if($('#nombreMadre').val() == "")
       text: 'Olvidaste completar numero de telefono mobil de la madre',
     })
     
-  }else if( $('#telefMovil').val().length < 10 || $('#telefMovil').val().length > 10 || isNaN($('#telefMovil').val()))
+  }else if($('#vivecon').val() == 1 && $('#telefMovil').val().length < 10 || $('#telefMovil').val().length > 10 || isNaN($('#telefMovil').val()))
   {
 
 
@@ -800,13 +801,121 @@ else if($('#nombreMadre').val() == "")
     
   }
  
+
+
+else if($('#vivecon').val() == 2)
+{
+  padre();
+  
+}else if($('#vivecon').val() == 3)
+{
+  tutor();
+   
+}else if($('#vivecon').val() == 4)
+{
+
+  padreMadre();
+  
 }
 
 
+else if($('#apeEmer').val() == "")
+{
+  $('#apeEmer').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'Olvidaste agregar el apellido de la persona de Emergencia'
+  })
+  
+}else if($('#nameEmer').val() == "")
+{
+  $('#nameEmer').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'Olvidaste agregar el nombre de la persona de Emergencia'
+  })
+  
+}else if($('#lugarWork').val() == "")
+{
+  $('#lugarWork').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'Olviaste agregar el trabajo de la persona de Emergencia'
+  })
+  
+}else if($('#idDom').val() == "")
+{
+  $('#idDom').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'Olvidaste agregar la cedula de la persona de Emergencia'
+  })
+  
+}else if($('#idDom').val().length > 11 ||$('#idDom').val().length < 11 || isNaN($('#idDom').val()))
+{
+  $('#idDom').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'La cedula de la persona de Emergencia esta incorrecta'
+  })
+  
+}else if($('#telephoneNum').val() == "")
+{
+  $('#telephoneNum').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'Olvidaste el telefono de la persona de Emergencia'
+  })
+  
+}else if($('#telephoneNum').val().length < 10 ||$('#telephoneNum').val().length > 10 || isNaN($('#telephoneNum').val()))
+{
+  $('#telephoneNum').focus()
+  Swal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'El telefono de la persona de Emergencia esta incorrecto'
+  })
+  
+}else if($('#emailPersona').val() == "")
+{
+  $('#emailPersona').focus();
+  Swal.fire({
+    icon: 'error',
+    title: 'Eror',
+    text: 'Olvidaste el email de la persona'
+  })
+  
+}
+else
+{
+let url = "save_data.php";
+
+$.post(url,postData,function(response){
+
+  console.log(response)
+
+})
+
+Swal.fire({
+  icon: 'success',
+  title: 'Buen trabajo',
+  text: 'Datos guardados correctamente', 
+})
 
 
 
+}
 
+e.preventDefault();
+});
+
+ 
 
 
 
