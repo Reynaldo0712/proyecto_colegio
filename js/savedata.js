@@ -685,11 +685,180 @@ else if ($('#vivecon').val() == 2 && $('#telefonoMov').val() == "")
   
 }
 
-else if($('#vivecon').val() == 3)
+else if($('#vivecon').val() == 3 && $('#apellidoTutors').val() == "")
 {
   
+  
+    $('#apellidoTutors').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar el apellido del tutor',
+    })
+    
+  
    
-}else if($('#vivecon').val() == 4)
+}
+
+else if($('#vivecon').val() == 3 && $('#nombreTutor').val() == "")
+  {
+    $('#nombreTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar el nombre del tutor',
+    })
+    
+  }
+  else if($('#vivecon').val() == 3 && $('#dirTutor').val()== "")
+  {
+    $('#dirTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar la direccion del tutor',
+    })
+    
+  }
+
+
+  else if($('#vivecon').val() == 3 && $('#cedTutor').val()== "")
+  {
+    $('#cedTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar la cedula del tutor',
+    })
+    
+  }else if($('#vivecon').val() == 3 && $('#cedTutor').val().length < 11 ||  $('#cedTutor').val().length > 11 || isNaN( $('#cedTutor').val()))
+  {
+    $('#cedTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'La cedula del tutor esta incorrecta del tutor',
+    })
+    
+  }
+
+  else if($('#vivecon').val() == 3 && $('#estudioTutor').val() == "")
+  {
+    $('#estudioTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar los estudios del tutor',
+    })
+    
+  }
+
+  else if($('#vivecon').val() == 3 && $('#ocupacTutor').val() == "")
+  {
+    $('#ocupacTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar la ocupacion del tutor',
+    })
+    
+  }
+
+  else if($('#vivecon').val() == 3 && $('#trabajoTutor').val() == "")
+  {
+    $('#trabajoTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar el trabajo del tutor',
+    })
+    
+  }
+
+  else if($('#vivecon').val() == 3 && $('#emailTutor').val()== "")
+  {
+    $('#emailTutor').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar el email del tutor',
+    })
+    
+  }
+
+  else if($('#vivecon').val() == 3 && $('#teleRes').val() == "")
+  {
+    $('#teleRes').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste completar el numero de telefono del tutor',
+    })
+    
+  }
+  
+  else if($('#vivecon').val() == 3 && $('#teleRes').val().length < 10 || $('#teleRes').val().length > 10 || isNaN($('#teleRes').val()))
+  {
+    $('#teleRes').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto del tutor',
+    })
+    
+  }
+
+
+
+  else if($('#vivecon').val() == 3 && $('#teleOfic').val() == "")
+  {
+    $('#teleOfic').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste el numero de telefono del tutor',
+    })
+    
+  }
+  
+  else if($('#vivecon').val() == 3 && $('#teleOfic').val().length < 10 ||  $('#teleOfic').val().length > 10 || isNaN( $('#teleOfic').val()))
+  {
+    $('#teleOfic').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto del tutor',
+    })
+    
+
+  }
+
+
+
+  else if($('#vivecon').val() == 3 && $('#teleMov').val() == "")
+  {
+    $('#teleMov').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Olvidaste el numero de telefono del tutor',
+    })
+    
+  }
+  
+  else if($('#vivecon').val() == 3 && $('#teleMov').val().length < 10 ||  $('#teleMov').val().length > 10 || isNaN( $('#teleMov').val()))
+  {
+    $('#teleMov').focus();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto del tutor',
+    })
+    
+  } 
+
+
+else if($('#vivecon').val() == 4)
 {
 
   padreMadre();
@@ -799,178 +968,7 @@ e.preventDefault();
 
 
 
-function tutor()
-{
 
- 
-  if($('#apellidoTutors').val() == "")
-  {
-    $('#apellidoTutors').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar el apellido del tutor',
-    })
-    
-  }
-  else if( $('#nombreTutor').val() == "")
-  {
-    $('#nombreTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar el nombre del tutor',
-    })
-    
-  }
-  else if($('#dirTutor').val()== "")
-  {
-    $('#dirTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar la direccion del tutor',
-    })
-    
-  }
-
-
-  else if($('#cedTutor').val()== "")
-  {
-    $('#cedTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar la cedula del tutor',
-    })
-    
-  }else if( $('#cedTutor').val().length < 11 ||  $('#cedTutor').val().length > 11 || isNaN( $('#cedTutor').val()))
-  {
-    $('#cedTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'La cedula del tutor esta incorrecta del tutor',
-    })
-    
-  }
-
-  else if($('#estudioTutor').val() == "")
-  {
-    $('#estudioTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar los estudios del tutor',
-    })
-    
-  }
-
-  else if($('#ocupacTutor').val() == "")
-  {
-    $('#ocupacTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar la ocupacion del tutor',
-    })
-    
-  }
-
-  else if($('#trabajoTutor').val() == "")
-  {
-    $('#trabajoTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar el trabajo del tutor',
-    })
-    
-  }
-
-  else if($('#emailTutor').val()== "")
-  {
-    $('#emailTutor').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar el email del tutor',
-    })
-    
-  }
-
-  else if($('#teleRes').val() == "")
-  {
-    $('#teleRes').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste completar el numero de telefono del tutor',
-    })
-    
-  }
-  
-  else if($('#teleRes').val().length < 10 || $('#teleRes').val().length > 10 || isNaN($('#teleRes').val()))
-  {
-    $('#teleRes').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto del tutor',
-    })
-    
-  }
-
-
-
-  else if( $('#teleOfic').val() == "")
-  {
-    $('#teleOfic').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste el numero de telefono del tutor',
-    })
-    
-  }
-  
-  else if( $('#teleOfic').val().length < 10 ||  $('#teleOfic').val().length > 10 || isNaN( $('#teleOfic').val()))
-  {
-    $('#teleOfic').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto del tutor',
-    })
-    
-
-  }
-
-
-
-  else if( $('#teleMov').val() == "")
-  {
-    $('#teleMov').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Olvidaste el numero de telefono del tutor',
-    })
-    
-  }
-  
-  else if($('#teleMov').val().length < 10 ||  $('#teleMov').val().length > 10 || isNaN( $('#teleMov').val()))
-  {
-    $('#teleMov').focus();
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto del tutor',
-    })
-    
-  } 
-
-}
  
 function padreMadre()
 {
