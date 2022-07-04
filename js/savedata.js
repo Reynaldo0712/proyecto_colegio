@@ -321,6 +321,7 @@ else if($('#vivecon').val() == 0)
   })
   
 } 
+
 else if($('#vivecon').val() == 1 && $('#apelliMadre').val() == "")
 {
 
@@ -394,7 +395,9 @@ else if($('#vivecon').val() == 1 && $('#nombreMadre').val() == "")
 
     
 
-  }else if($('#vivecon').val() == 1 && $('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val()))
+  }
+  
+  else if($('#vivecon').val() == 1 && ($('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val())))
   {
     $('#cedMadre').focus();
     Swal.fire({
@@ -529,6 +532,7 @@ else if($('#vivecon').val() == 1 && $('#nombreMadre').val() == "")
     })
     
   }
+  
  
 
 
@@ -710,7 +714,7 @@ else if($('#vivecon').val() == 3 && $('#nombreTutor').val() == "")
     })
     
   }
-  else if($('#vivecon').val() == 3 && $('#dirTutor').val()== "")
+  else if($('#vivecon').val() == 3 && $('#dirTutor').val() == "")
   {
     $('#dirTutor').focus();
     Swal.fire({
@@ -722,7 +726,7 @@ else if($('#vivecon').val() == 3 && $('#nombreTutor').val() == "")
   }
 
 
-  else if($('#vivecon').val() == 3 && $('#cedTutor').val()== "")
+  else if($('#vivecon').val() == 3 && $('#cedTutor').val() == "")
   {
     $('#cedTutor').focus();
     Swal.fire({
@@ -731,7 +735,10 @@ else if($('#vivecon').val() == 3 && $('#nombreTutor').val() == "")
       text: 'Olvidaste completar la cedula del tutor',
     })
     
-  }else if($('#vivecon').val() == 3 && $('#cedTutor').val().length < 11 ||  $('#cedTutor').val().length > 11 || isNaN( $('#cedTutor').val()))
+
+
+  }
+  else if($('#vivecon').val() == 3 && $('#cedTutor').val().length < 11 ||  $('#cedTutor').val().length > 11 || isNaN( $('#cedTutor').val()))
   {
     $('#cedTutor').focus();
     Swal.fire({
@@ -858,13 +865,6 @@ else if($('#vivecon').val() == 3 && $('#nombreTutor').val() == "")
   } 
 
 
-else if($('#vivecon').val() == 4)
-{
-
-  padreMadre();
-  
-}
-
 
 else if($('#apeEmer').val() == "")
 {
@@ -963,27 +963,6 @@ e.preventDefault();
 });
 
  
-
-
-
-
-
-
- 
-function padreMadre()
-{
-
-  padre();
-  madre();
-
-
-}
-
-
-
-
-
-
 
 
 
