@@ -343,9 +343,166 @@ else if($('#vivecon').val() == 1 && $('#nombreMadre').val() == "")
     text: 'Olvidaste el nombre la madre',
   })
 
-  
-
 }
+else if($('#vivecon').val() == 1 && $('#direccionMadre').val() == "")
+  {
+    $('#direccionMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar la direccion de la madre',
+    })
+    
+
+  }
+  else if($('#vivecon').val() == 1 && $('#cedMadre').val() == "")
+  {
+    $('#cedMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar la cedula de la madre',
+    })
+
+    
+
+  }
+  else if($('#vivecon').val() == 1 && $('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val()))
+  {
+    $('#cedMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'La cedula de la madre esta incorrecta',
+    })
+    
+
+  }
+  
+  else if($('#vivecon').val() == 1 && $('#estudioMadre').val() == "")
+  {
+
+    $('#estudioMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar los estudios de la madre',
+    })
+    
+  }else if($('#vivecon').val() == 1 && $('#trabajoMadre').val() == "")
+  {
+
+    $('#trabajoMadre').focus();
+
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar el trabajo de la madre',
+    })
+    
+
+  }else if($('#vivecon').val() == 1 && $('#ocupacMadre').val() == "")
+  {
+
+    $('#ocupacMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar la ocupacion de la madre',
+    })
+    
+  }else if($('#vivecon').val() == 1 && $('#emailMadre').val() == "")
+  {
+    $('#emailMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar el email de la madre',
+    })
+    
+
+
+  }
+  else if($('#vivecon').val() == 1 && $('#telefMadre').val() == "")
+  {
+
+
+    $('#telefMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar numero de telefono de la madre',
+    })
+    
+  }else if($('#vivecon').val() == 1 && $('#telefMadre').val().length < 10 ||  $('#telefMadre').val().length > 10 || isNaN($('#telefMadre').val()))
+  {
+
+
+
+    $('#telefMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto',
+    })
+
+
+    
+  }
+  
+  else if($('#vivecon').val() == 1 && $('#teloficMadre').val() == "")
+  {
+
+
+    $('#teloficMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar numero de telefono de la  oficina de la madre',
+    })
+    
+  }else if($('#vivecon').val() == 1 && $('#teloficMadre').val().length < 10 || $('#teloficMadre').val().length > 10 || isNaN($('#teloficMadre').val()))
+  {
+
+
+
+    $('#teloficMadre').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto',
+    })
+
+    
+
+  }
+
+  else if($('#vivecon').val() == 1 && $('#telefMovil').val() == "")
+  {
+
+
+    $('#telefMovil').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'Olvidaste completar numero de telefono mobil de la madre',
+    })
+    
+  }else if($('#vivecon').val() == 1 && $('#telefMovil').val().length < 10 || $('#telefMovil').val().length > 10 || isNaN($('#telefMovil').val()))
+  {
+
+
+
+    $('#telefMovil').focus();
+    Swal.fire({
+      icon:'error',
+      title: 'Error',
+      text: 'El numero de telefono no es correcto',
+    })
+    
+  }
+ 
+
 
 else if($('#vivecon').val() == 2)
 {
@@ -460,202 +617,6 @@ e.preventDefault();
 });
 
  
-
-function madre()
-{
-
-
- 
-if($('#apelliMadre').val() == "")
-{
-  $('#apelliMadre').focus();
-  Swal.fire({
-    icon:'error',
-    title: 'Error',
-    text: 'Olvidaste el apellidode la madre',
-  })
-
-
-}
- 
-
-else if($('#nombreMadre').val() == "")
-{
-  $('#nombreMadre').focus();
-  Swal.fire({
-    icon:'error',
-    title: 'Error',
-    text: 'Olvidaste el nombre la madre',
-  })
-
-  
-
-}
-  
-  else if($('#direccionMadre').val() == "")
-  {
-    $('#direccionMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar la direccion de la madre',
-    })
-    
-
-  }else if($('#cedMadre').val() == "")
-  {
-    $('#cedMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar la cedula de la madre',
-    })
-
-    
-
-  }else if($('#cedMadre').val().length > 11 || $('#cedMadre').val().length < 11 || isNaN($('#cedMadre').val()))
-  {
-    $('#cedMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'La cedula de la madre esta incorrecta',
-    })
-    
-
-  }
-  
-  
-  else if($('#estudioMadre').val() == "")
-  {
-
-    $('#estudioMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar los estudios de la madre',
-    })
-    
-  }else if($('#trabajoMadre').val() == "")
-  {
-
-    $('#trabajoMadre').focus();
-
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar el trabajo de la madre',
-    })
-    
-
-  }else if($('#ocupacMadre').val() == "")
-  {
-
-    $('#ocupacMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar la ocupacion de la madre',
-    })
-    
-  }else if($('#emailMadre').val() == "")
-  {
-    $('#emailMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar el email de la madre',
-    })
-    
-
-
-  }
-  else if($('#telefMadre').val() == "")
-  {
-
-
-    $('#telefMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar numero de telefono de la madre',
-    })
-    
-  }else if($('#telefMadre').val().length < 10 ||  $('#telefMadre').val().length > 10 || isNaN($('#telefMadre').val()))
-  {
-
-
-
-    $('#telefMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto',
-    })
-
-
-    
-  }
-  
-  else if($('#teloficMadre').val() == "")
-  {
-
-
-    $('#teloficMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar numero de telefono de la  oficina de la madre',
-    })
-    
-  }else if($('#teloficMadre').val().length < 10 || $('#teloficMadre').val().length > 10 || isNaN($('#teloficMadre').val()))
-  {
-
-
-
-    $('#teloficMadre').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto',
-    })
-
-    
-
-  }
-
-  else if($('#telefMovil').val() == "")
-  {
-
-
-    $('#telefMovil').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'Olvidaste completar numero de telefono mobil de la madre',
-    })
-    
-  }else if( $('#telefMovil').val().length < 10 || $('#telefMovil').val().length > 10 || isNaN($('#telefMovil').val()))
-  {
-
-
-
-    $('#telefMovil').focus();
-    Swal.fire({
-      icon:'error',
-      title: 'Error',
-      text: 'El numero de telefono no es correcto',
-    })
-    
-  }
- 
-}
-
-
-
-
-
-
 
 
 function padre()
