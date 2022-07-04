@@ -1,9 +1,8 @@
 
 $(document).ready(function(){
 
-  // Klk
+ 
 
-  
 
 $('#task-form').submit(function(e){
 
